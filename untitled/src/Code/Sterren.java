@@ -28,8 +28,11 @@ public class Sterren {
         return 0;
     }
 
-    public Sterren() {
-    }
+  public Sterren(){
+
+  }
+
+
 }
 
 

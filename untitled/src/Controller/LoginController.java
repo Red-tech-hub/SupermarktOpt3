@@ -23,7 +23,7 @@ public class LoginController {
     }
 
     public boolean checkCredentials(String user, String password) {
-        return user.equals("r") && password.equals("r");
+        return user.equals("Ronald van der Veen") && password.equals("rvdv");
     }
 
 

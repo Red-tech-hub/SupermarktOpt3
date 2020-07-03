@@ -5,6 +5,8 @@ public class Werknemer {
     private Integer uren;
     private Integer leeftijd;
     private Double uurloon;
+    public Klant helps;
+    public Veiligheid has;
 
     public Werknemer(String werknemer, Integer uren, Integer leeftijd, Double uurloon) {
         this.werknemer = werknemer;

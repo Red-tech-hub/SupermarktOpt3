@@ -19,4 +19,12 @@ public class Veiligheid {
         return handschoenen;
     }
 
+    private static final Veiligheid instance = new Veiligheid();
+
+        private Veiligheid(){}
+
+        public static Veiligheid getInstance(){
+            return instance;
+        }
+
 }
