@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF9A9A;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WerknemerController">
+   <children>
+      <VBox layoutX="50.0" layoutY="38.0" prefHeight="523.0" prefWidth="900.0" style="-fx-background-color: #9c2b27; -fx-border-radius: 10px;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Werknemer" wrappingWidth="229.33673399686813">
+               <font>
+                  <Font size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="448.0" prefWidth="900.0">
+               <children>
+                  <VBox prefHeight="435.0" prefWidth="900.0">
+                     <children>
+                        <TableView fx:id="WerknemerTabel" prefHeight="305.0" prefWidth="820.0">
+                          <columns>
+                            <TableColumn fx:id="WerknemerColom" prefWidth="236.800048828125" text="Werknemer" />
+                              <TableColumn fx:id="UrenColom" prefWidth="159.199951171875" text="Uren" />
+                              <TableColumn fx:id="LeeftijdColom" prefWidth="182.4000244140625" text="Leeftijd" />
+                              <TableColumn fx:id="Uurloon" prefWidth="241.5999755859375" text="Uurloon" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets left="40.0" right="40.0" top="40.0" />
+                           </VBox.margin>
+                        </TableView>
+                        <Button fx:id="BackButton" mnemonicParsing="false" onAction="#Backbutton" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #720303;" text="Back" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="760.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

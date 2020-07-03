@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF9A9A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LeverancierController">
+   <children>
+      <VBox layoutX="50.0" layoutY="38.0" prefHeight="523.0" prefWidth="900.0" style="-fx-background-color: #9c2b27; -fx-border-radius: 10px;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Leverancier" wrappingWidth="229.33673399686813">
+               <font>
+                  <Font size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="448.0" prefWidth="900.0">
+               <children>
+                  <VBox prefHeight="435.0" prefWidth="900.0">
+                     <children>
+                        <TableView prefHeight="305.0" prefWidth="820.0" fx:id="LeverancierTabel">
+                          <columns>
+                            <TableColumn prefWidth="202.3999481201172" text="Leverancier" fx:id="LeverancierColom"/>
+                              <TableColumn prefWidth="194.4000244140625" text="Goederen" fx:id="GoederenColom"/>
+                              <TableColumn prefWidth="195.2000732421875" text="Hoeveelheid" fx:id="HoeveelheidColom"/>
+                              <TableColumn prefWidth="229.5999755859375" text="Tijd van aankomst" fx:id="TijdColom"/>
+                          </columns>
+                           <VBox.margin>
+                              <Insets left="40.0" right="40.0" top="40.0" />
+                           </VBox.margin>
+                        </TableView>
+                        <Button fx:id="Backbutton" onAction="#Backbutton"  mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #720303;" text="Back" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="760.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

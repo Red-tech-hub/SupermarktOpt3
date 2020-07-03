@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF9A9A;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="300.0" layoutY="50.0" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #9c2b27; -fx-border-radius: 10px;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login " wrappingWidth="93.33673399686813">
+               <font>
+                  <Font size="34.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="Username" prefHeight="40.0" prefWidth="400.0" promptText="Username" style="-fx-background-color: #e45652;">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="Password" prefHeight="40.0" prefWidth="400.0" promptText="Password" style="-fx-background-color: #e45652;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="30.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Button fx:id="LoginButton" onAction="#LoginAsBoss" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #720303;" text="Login" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="loginMessageLabel" prefHeight="18.0" prefWidth="288.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
